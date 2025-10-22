@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Project</title>
+</head>
+<body>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Poject</title>
+	<style>
+		body {
+			background-image: url("https://i.pinimg.com/736x/4c/87/8b/4c878b3e140708fee859e61bbd85eb0a.jpg");
+			background-size: cover;   
+			background-position: center;
+			background-repeat: no-repeat;
+			color: #141414;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+		}
+
+		
+    header {
+      background-color: #a87ccf;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      color: #ddd3e3;
+      border: 3px dotted #ddd3e3;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      color: #ddd3e3;
+      cursor: pointer;
+    }
+
+  
+    .intro {
+      text-align: center;
+      background-color: #ddd3e3;
+      padding: 30px 15px;
+    }
+
+    .intro img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .intro h1 {
+      font-size: 2rem;
+    }
+
+    .intro h1 span {
+      color: #654f78;
+    }
+
+   
+    .about {
+      background-color: #a87ccf;
+      color: #ddd3e3;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border: 3px dotted #ddd3e3;
+    }
+
+    .about-text {
+      padding: 20px 15px;
+      text-align: center;
+      font-size: 1rem;
+      color: #654f78;
+      border: 3px dotted #a87ccf;
+      background-color: #ddd3e3 ;
+    }
+
+   
+    .works {
+      padding: 20px;
+    }
+
+    .works h2 {
+      text-align: center;
+      background-color: #a87ccf;
+      color: #ddd3e3;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .work-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #ddd3e3;
+      border: 3px dotted #a87ccf;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      color: #a87ccf;
+    }
+
+    .work-item img {
+      width: 400px;
+      border-radius: 8px;
+      border: 2px dotted #a87ccf;
+    }
+
+    .work-details {
+      flex: 1;
+    }
+
+    .work-details p {
+      font-weight: bold;
+      font-size: 2em;
+      color: #ddd3e3;
+      text-align: left;
+    }
+
+    .work-details ul {
+      list-style: none;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    .work-details li::before {
+      content: "💟";
+      color: #ddd3e3;
+      font-weight: 10px;
+      text-align: left;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact h2 {
+      background-color: #a87ccf;
+      color: #ddd3e3;
+      border: 3px dotted #a87ccf;
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #ddd3e3;
+      padding: 30px;
+      border-radius: 20px;
+      border: 3px dotted #a87ccf;
+      text-align: left;
+      color: #654f78;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 2px dotted #a87ccf;
+      border-radius: 5px;
+      font-size: 0.95em;
+
+    }
+
+    button {
+      background-color: #a87ccf;
+      color: #ddd3e3;
+      border: 2px dotted #a87ccf;
+      padding: 10px 15px;
+      border-radius: 5px;
+      width: 100%;
+      
+    }
+
+    button:hover {
+      background-color: #a87ccf;
+    }
+
+    .file-upload {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px;
+    }
+
+    .upload-btn {
+      background-color: #a87ccf;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+      white-space: nowrap;
+    }
+
+    .upload-btn:hover {
+      background-color: #654f78;
+    }
+
+    #file-name {
+      font-size: 0.9em;
+      color: #654f78;
+      font-style: bold;
+    }
+
+    @media (max-width: 750px) {
+      .work-item {
+        text-align: center;
+      }
+      .work-item img {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div><strong> ♥︎ My Portfolio ♥︎ </strong></div>
+     <nav>
+      <a href="#about">About Me!♥︎</a>
+      <a href="#works">My Works!♥︎</a>
+      <a href="#contact">Contact Me!♥︎</a>
+    </nav>
+  </header>
+
+  
+  <section class="intro">
+    <img src="mm.HEIC">
+    <h1>HELOOO!!♥︎ I'm <span>Megan Gacita!♥︎</span></h1>
+    <p>Forced Web Designer.....(char lang po...)</p>
+  </section>
+
+
+  <div id="about" class="about">♥︎!About Me!♥︎</div>
+  <div class="about-text">
+    <p>HELLOOOOO! Im Megan Gacita and I like purple so MUCH!♥︎</p>
+    <p>I don't really like coding but I have to.....its okay. It's very hard but I can manage</p>
+  </div>
+
+  
+  <section id="works" class="works">
+    <h2>♥︎!My Works!♥︎</h2>
+
+    <div class="work-item">
+        <img src="music1.png"><br>
+        <img src="music2.png">
+      <div class="work-details">
+        <p>♥︎!My Top 3 Favorite Apple Music Songs!♥︎</p>
+        <ul>
+          <li>HTML & CSS Projects♥︎</li>
+          <li>Personal Favorites♥︎</li>
+          <li>List, Links, and Images♥︎</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <img src="movie.png">
+      <img src="https://i.pinimg.com/1200x/29/86/23/298623e04e0056cdec5e622c21d3bfa1.jpg">
+      <div class="work-details">
+        <p>♥︎!Movie Recomendation Form!♥︎</p>
+        <ul>
+          <li>HTML & CSS Projects♥︎</li>
+          <li>HTML Forms♥︎</li>
+          <li>Creative & Colorful♥︎</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>♥︎!Contact Me!♥︎</h2>
+    <form>
+      <label>♥︎!Your Name!♥︎:</label>
+      <input type="text" placeholder="Type Here!♥︎">
+
+      <label>♥︎!Your Email!♥︎:</label>
+      <input type="email" placeholder="Type here!♥︎">
+
+      <label>♥︎!Upload Your Image!♥︎:</label>
+      <div class="file-upload">
+        <label for="image" class="upload-btn">♥︎Choose File♥︎</label>
+        <span id="file-name">No file chosen</span>
+        <input type="file" id="image" accept="image/*" style="display: none;">
+      </div>
+
+      <label>♥︎How did you find me?♥︎</label><br><br>
+      <label for="facebook">!Facebook!</label>
+     	<input type="radio" id="facebook" name="facebook" value="facebook">
+     	<label for="google">!Google!</label>
+     	<input type="radio" id="google" name="google" value="google">
+     	<label for="friends">!Friends!</label>
+     	<input type="radio" id="friends" name="friends" value="friends">
+      <br><br>
+
+      <label>♥︎Services Interested In:</label><br><br>
+      <label for="web design">♥︎!Web Design!♥︎</label>
+     	<input type="checkbox" id="web design" name="web design" value="web design">
+     	<label for="graphic design">♥︎!Graphic Design!♥︎</label>
+     	<input type="checkbox" id="graphic design" name="graphic design" value="graphic design">
+     	<label for="robotics">♥︎!Robotics!♥︎</label>
+     	<input type="checkbox" id="robotics" name="robotics" value="robotics">
+      <br><br>
+
+      <label>♥︎Rate my Portfolio:</label>
+      <select>
+        <option>♥︎Select Rating♥︎</option>
+        <option>♥︎</option>
+        <option>♥︎♥︎</option>
+        <option>♥︎♥︎♥︎</option>
+        <option>♥︎♥︎♥︎♥︎</option>
+        <option>♥︎♥︎♥︎♥︎♥︎</option>
+      </select>
+
+      <label>♥︎Any Feedback?♥︎</label>
+      <textarea rows="3" placeholder="Type here!"></textarea>
+
+      <button type="submit">♥︎!Submit!♥︎</button>
+    </form>
+  </section>
+
+
+
+	</style>
+</head>
+<body>
+
+     
+
+</body>
+</html>
